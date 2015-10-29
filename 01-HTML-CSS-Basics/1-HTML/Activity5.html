@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>SIGN UP</title>
+
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	<meta name="viewport" content="width=device-width, user-scalable=no">
+    <meta http-equiv="refresh" content="50" />
+    <meta name="author" content="Santiago Garzon" />
+
+    <link rel="stylesheet" type="text/css" href="css/style.css" media="all" />
+    <link rel="stylesheet" type="text/css" href="css/demo.css" media="all" />
+</head>
+<body>
+<div class="container">
+			<header>
+				<h1><span></span> SIGN UP</h1>
+            </header>       
+      <div  class="form">
+    		<form id="contactform"> 
+    			<p class="contact"><label for="fname">First name</label></p> 
+    			<input id="fname" name="fname" placeholder="First name" required="" tabindex="1" type="text"> 
+
+        			<p class="contact"><label for="lname">Last name</label></p> 
+              <input id="lname" name="lname" placeholder="Last name" required="" tabindex="2" type="text">  
+
+    		      <p class="contact"><label for="email">Email</label></p> 
+    			<input id="email" name="email" placeholder="example@domain.com" required="" tabindex="3" type="email" > 
+                
+              <p class="contact"><label for="birthday">Birthday (dd/mm/yyyy) </label></p> 
+        			<input id="birthday" name="birthday"  required=""  tabindex="4" type="date" pattern="\d{1,2}/\d{1,2}/\d{4}"> 
+    			 
+          <p class="contact"><label >Favourite sport</label></p>       
+            <select class="select-style gender" name="sports" tabindex="5">
+            <option value="f">Football</option>
+            <option value="b">beisball</option>
+            <option value="f">tenis</option>
+            <option value="f">swimming</option>
+            <option value="others">Other</option>
+            </select><br><br>
+            
+           <p class="contact"><label for="bioDesc">Bio description</label></p>  
+
+            <textarea rows="4" cols="50" name="bioDesc" id="bioDesc" form="contactform" required="" class="select-style gender" tabindex="6">
+            
+            </textarea>
+            <p></p>
+
+            <input class="buttom" name="submit" id="submit" tabindex="5" value="Sign me up!" type="submit"> 	
+            <input class="buttom" name="reset" id="reset" tabindex="10" value="Clear the form!" type="reset"> 
+   </form> 
+</div>      
+</div>
+
+</body>
+</html>
