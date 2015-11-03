@@ -1,0 +1,32 @@
+* {
+	background-color: black;
+	color: white;
+
+}
+
+#seccion {
+	text-align: center;
+	visibility: hidden;
+
+}
+
+#boton {
+
+	background-color: gray;
+	display: block;
+	margin: auto;
+
+}
+
+.alias {
+	background-color: lightblue;
+	color: black;
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+	margin-top: 30px;
+	padding-top: 20px;
+	
+
+
+}
