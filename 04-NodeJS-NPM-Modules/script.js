@@ -1,4 +1,5 @@
 var movie= require("./movie.js");
+var $ = require('jquery');
 
 function Director (name){
 	this.name= name;
