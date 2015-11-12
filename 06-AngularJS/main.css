@@ -1,0 +1,59 @@
+* {
+	background-color: black;
+	color: white;
+}
+
+
+img {
+	max-width: 100px;
+	height: 50 px;
+	border: 3px solid #73AD21;
+}
+
+ul {
+	display: inline;
+
+}
+
+li{
+	display: inline;
+}
+
+
+h1 {
+	color: red;
+	margin-left: 20px;
+	margin-top: 15px;
+	text-align: center;
+		
+}
+
+
+h4 {
+	color: grey;
+	margin-left: 7px;
+}
+
+h5{
+	margin-top: 0px;
+	padding-top: 1px;
+}
+
+button {
+	float: left;
+	margin-right: 20px;
+}
+
+#selectedMovie {
+	float: left ;
+	margin-right: 40px;
+}
+
+#forms {
+
+	margin-top: 75px;
+}
+
+#saveButton {
+	margin-left: 25px;
+}

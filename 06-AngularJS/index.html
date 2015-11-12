@@ -1,0 +1,74 @@
+<!DOCTYPE HTML>
+<html ng-app="angulapp">
+	<head>
+		<meta charset="utf-8" >
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+		<title>AngularJS</title>
+
+		<script src="node_modules/angular/angular.min.js"></script>
+	</head>
+	<body ng-controller="moviesCtrl">
+		<section >
+			<ul ng-repeat="movie in movies" ng-hide="hide">	
+				<li>
+					
+					<img ng-src="{{movie.url}}" 
+					alt="{{movie.title}}"
+					ng-click="clicked(movie.id)">
+				</li>
+			</ul>
+
+
+		</section>
+		<section ng-hide="hide2">
+			<h1>
+				{{selected.title}}
+			</h1>
+			<img id="selectedMovie" 
+			ng-src="{{selected.url}}"
+			alt="{{movie.title}}">
+
+			<h2>
+				Type : {{selected.type}}
+			</h2>
+			<h4>
+				Year: {{selected.year}}
+			</h4>
+			<h4>
+				Source: {{selected.source}}
+			</h4>
+			<h4>
+				Score: {{selected.score}}
+			</h4>
+
+			<button ng-click="back()">  Back </button>
+			<button ng-click="edit(selected.id)"> Edit </button>
+			<button ng-click="new()"> New </button>
+		</section>
+
+		<section id="forms" ng-hide="hide3">
+			<form>
+				<label>Title</label>
+		        <input type="text" name="title" ng-model="newmovie.title" />
+		        <label>Type</label>
+		        <input type="text" name="type" ng-model="newmovie.type" />
+		        <label>Year</label>
+		        <input type="text" name="year" ng-model="newmovie.year" />
+		        <label>Source</label>
+		        <input type="text" name="source" ng-model="newmovie.source" />
+		        <label>Score</label>
+		        <input type="text" name="score" ng-model="newmovie.score" />
+		        <label>Image</label>
+		        <input type="text" name="url" ng-model="newmovie.url" />
+		        <input type="hidden" ng-model="newmovie.id" />
+        		<input type="button" value="Save" ng-click="save()" id="saveButton" />
+
+			</form>
+		</section>
+
+		<script src="model.js"></script>
+		<script src="app.js"> </script>
+		<link rel="stylesheet" type="text/css" href="main.css">
+	</body>
+</html>
