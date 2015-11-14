@@ -15,7 +15,7 @@
 					
 					<img ng-src="{{movie.url}}" 
 					alt="{{movie.title}}"
-					ng-click="clicked(movie.id)">
+					ng-click="clicked($index)">
 				</li>
 			</ul>
 
@@ -44,6 +44,7 @@
 
 			<button ng-click="back()">  Back </button>
 			<button ng-click="edit(selected.id)"> Edit </button>
+			<button ng-click="delete(selected.id)"> Remove </button>
 			<button ng-click="new()"> New </button>
 		</section>
 

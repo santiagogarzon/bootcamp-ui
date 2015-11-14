@@ -1,5 +1,6 @@
 var app= angular.module('angulapp', []);
 
+
 app.controller('moviesCtrl', function($scope, movieService) {
 	$scope.movies= movies;
 	$scope.selected= $scope.movies[0];
@@ -31,7 +32,13 @@ app.controller('moviesCtrl', function($scope, movieService) {
 		$scope.hide= true;
 		$scope.hide2= true;
 		$scope.hide3= false;
-	}
+	};
+	$scope.delete = function(id){
+		movieService.delete(id);
+		$scope.newmovie={};
+		$scope.back();
+
+	};
 
 	
 });
@@ -63,7 +70,7 @@ app.service("movieService", function(){
 	this.delete= function(id) {
 		for(i in movies){
 			if(movies[i].id=id){
-				movies.splice(i, 1);
+				movies.splice(i+1, 1);
 			}
 		}
 	}
